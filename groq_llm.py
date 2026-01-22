@@ -10,7 +10,7 @@ if not GROQ_API_KEY:
     raise ValueError("❌ GROQ_API_KEY missing. Add it to your .env file.")
 
 # IMPORTANT: do NOT pass unsupported kwargs (like proxies)
-client = Groq(api_key=GROQ_API_KEY)
+client = Groq()
 
 
 def _clean_text(s: str) -> str:
